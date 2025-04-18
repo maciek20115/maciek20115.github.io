@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+}
+
+.content-section {
+    padding: 50px 20px;
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.content-section.visible {
+    opacity: 1;
+}
+/* ===== CUSTOM ANIMATIONS ===== */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* ===== LAZY LOADING STYLES ===== */
+  .lazy-load {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .lazy-load.loaded {
+    opacity: 1;
+  }
+  
+  /* ===== PARALLAX EFFECT ===== */
+  .parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh; /* Adjust height as needed */
+  }

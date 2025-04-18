@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Info Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== SECTION TEMPLATES ===== -->
+<!-- Add these where you want animated sections -->
+<section class="content-section" data-aos="fade-up">
+    <h2>Section Title</h2>
+    <p>Your content here...</p>
+  </section>
+  
+  <!-- For lazy-loaded images -->
+  <img src="placeholder.jpg" data-src="real-image.jpg" class="lazy-load" alt="Description">
+  
+  <!-- For parallax sections -->
+  <div class="parallax-section"></div>
+    <header class="hero">
+        <h1 class="animate__animated animate__fadeInDown">Welcome to My Site</h1>
+    </header>
+
+    <section class="content-section" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>Your content here...</p>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
